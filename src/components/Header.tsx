@@ -3,7 +3,7 @@ import React from 'react';
 
 const Header: React.FC = () => {
 
-const logo = require('./img/logo.png');
+const logo = require('./img/whitelogo.png');
 
   return (
     <header className="header">
