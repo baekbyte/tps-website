@@ -4,6 +4,7 @@ import './MainPage.css';
 import Microsoft from './img/MicrosoftLogo.png';
 import OpenAI from './img/OpenAILogo.png';
 import DSAI from './img/DsaiLogo.png';
+import Apart from './img/ApartLogo.png';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -12,8 +13,8 @@ const MainPage: React.FC = () => {
 
     const navigate = useNavigate();
     
-    const baseLogos = [Microsoft, OpenAI, DSAI];
-    const repeatCount = 8; // 3 * 8 = 24 slides
+    const baseLogos = [Microsoft, OpenAI, DSAI, Apart];
+    const repeatCount = 8; // 4 * 8 = 32 slides
     const logos = Array.from({ length: baseLogos.length * repeatCount }, (_, i) => baseLogos[i % baseLogos.length]);
     const total = logos.length;
 
@@ -49,12 +50,12 @@ const MainPage: React.FC = () => {
                   <Slider
                     dots={false}
                     infinite={true}
-                    speed={500}
+                    speed={10000}
                     slidesToShow={3}
                     slidesToScroll={1}
                     autoplay={true}
-                    autoplaySpeed={3000}
-                    cssEase="ease-in-out"
+                    autoplaySpeed={0}
+                    cssEase="linear"
                     arrows={false}
                     pauseOnHover={false}
                   >
