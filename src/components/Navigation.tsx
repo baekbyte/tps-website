@@ -1,33 +1,27 @@
 import React from 'react';
 
-
 const Header: React.FC = () => {
-
-const logo = require('./img/logo1.png');
+  const logo = require('./img/logo.png');
 
   return (
-    <header className="header">
-        <div className="header-container">
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '95%' }}> {/*Fix width later with padding CSS*/}
-
-            <div className="logo-container">
-              <a href="/landing" className="header-logo-link">
-              <img src={logo} alt="logo" className="header-logo" height={200}></img>
-              </a>
-            </div>
-            <div className="nav-container" style={{ display: 'flex', alignItems: 'center' }}>
-              <nav className="header-nav">
-              <ul>
-                <li><a href="/landing">Landing</a></li>
-                <li><a href="/project">Project</a></li>
-                <li><a href="/resource">Resource</a></li>
-                <li><a href="/team">Team</a></li>
-                </ul>
-              </nav>
-            </div>
+    <header className="sticky-nav">
+      <div className="nav-container">
+        <div className="nav-content">
+          <div className="logo-container">
+            <a href="/home" className="logo-link">
+              <img src={logo} alt="logo" className="nav-logo" height={50} />
+            </a>
           </div>
+          <nav className="nav-menu">
+            <ul className="nav-list">
+              <li><a href="/home">Home</a></li>
+              <li><a href="/project">Project</a></li>
+              <li><a href="/resource">Resource</a></li>
+              <li><a href="/team">Team</a></li>
+            </ul>
+          </nav>
         </div>
-        <br></br>
+      </div>
     </header>
   );
 };
