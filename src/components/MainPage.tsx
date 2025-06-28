@@ -76,8 +76,28 @@ const MainPage: React.FC = () => {
 
             {/* Section 4: Our Impact */}
             <section className="main-section our-impact-section" id="our-impact">
-                <h2>Our Impact</h2>
-                <p>Discover the positive impact TPS has made through its initiatives, research, and community engagement.</p>
+                <div className="our-impact-block">
+                  <h2 className="our-impact-title">OUR IMPACT</h2>
+                  <div className="our-impact-divider"></div>
+                  <div className="our-impact-stats">
+                    <div className="impact-stat">
+                      <div className="impact-stat-number">200+</div>
+                      <div className="impact-stat-desc"><b>Participants</b> engaged in TPS events and programs</div>
+                    </div>
+                    <div className="impact-stat">
+                      <div className="impact-stat-number">60%</div>
+                      <div className="impact-stat-desc">identify as <b>underrepresented</b> in tech & policy</div>
+                    </div>
+                    <div className="impact-stat">
+                      <div className="impact-stat-number">2000+</div>
+                      <div className="impact-stat-desc"><b>Hours</b> dedicated to research and advocacy</div>
+                    </div>
+                    <div className="impact-stat">
+                      <div className="impact-stat-number">4+</div>
+                      <div className="impact-stat-desc"><b>Partner</b> organizations and sponsors</div>
+                    </div>
+                  </div>
+                </div>
             </section>
 
             {/* Section 5: Our Partners */}
