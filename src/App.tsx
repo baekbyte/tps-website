@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Navigation';
+import Footer from './components/Footer';
 import MainPage from './components/MainPage';
 import ProjectPage from './components/ProjectPage';
 import ResourcePage from './components/ResourcePage';
@@ -21,6 +22,7 @@ const App: React.FC = () => {
             <Route path="/team" element={<TeamPage />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </Router>
   );
