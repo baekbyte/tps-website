@@ -316,7 +316,7 @@
 }
 
 .carousel-container {
-  width: 660px;
+  width: 1000px;
   height: 120px;
   overflow: hidden;
   margin: 0 auto;
@@ -650,3 +650,40 @@
     text-align: left;
   }
 } 
+
+.our-partners-section {
+  background: #fff;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 96px 0 0 0;
+}
+
+.our-partners-block {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.our-partners-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #444;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.2em;
+  text-align: left;
+}
+
+.our-partners-divider {
+  width: 60px;
+  height: 3px;
+  background: #d1d5db;
+  border-radius: 2px;
+  margin-bottom: 2.5em;
+}
+

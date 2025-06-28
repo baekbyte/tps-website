@@ -154,26 +154,29 @@ const MainPage: React.FC = () => {
 
             {/* Section 5: Our Partners */}
             <section className="main-section our-partners-section" id="our-partners">
-                <h2>Our Partners</h2>
-                <div className="carousel-container">
-                  <Slider
-                    dots={false}
-                    infinite={true}
-                    speed={10000}
-                    slidesToShow={3}
-                    slidesToScroll={1}
-                    autoplay={true}
-                    autoplaySpeed={0}
-                    cssEase="linear"
-                    arrows={false}
-                    pauseOnHover={false}
-                  >
-                    {logos.map((src, idx) => (
-                      <div key={idx} className="partner-logo-slide">
-                        <img src={src} alt={`Partner ${idx + 1}`} className="partner-logo" />
-                      </div>
-                    ))}
-                  </Slider>
+                <div className="our-partners-block">
+                    <h2 className='our-partners-title'>OUR PARTNERS</h2>
+                    <div className="our-partners-divider"></div>
+                    <div className="carousel-container">
+                      <Slider
+                        dots={false}
+                        infinite={true}
+                        speed={10000}
+                        slidesToShow={3}
+                        slidesToScroll={1}
+                        autoplay={true}
+                        autoplaySpeed={0}
+                        cssEase="linear"
+                        arrows={false}
+                        pauseOnHover={false}
+                      >
+                        {logos.map((src, idx) => (
+                          <div key={idx} className="partner-logo-slide">
+                            <img src={src} alt={`Partner ${idx + 1}`} className="partner-logo" />
+                          </div>
+                        ))}
+                      </Slider>
+                    </div>
                 </div>
             </section>
         </div>
