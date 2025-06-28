@@ -320,9 +320,6 @@
   height: 120px;
   overflow: hidden;
   margin: 0 auto;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
   border-radius: 0;
   box-shadow: none;
 }
@@ -657,7 +654,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 96px 0 0 0;
+  padding: 0px 0 96px 0;
 }
 
 .our-partners-block {
