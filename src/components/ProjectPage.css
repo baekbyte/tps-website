@@ -5,20 +5,7 @@
     align-items: center;
 }
 
-.main-section {
-    width: 100%;
-    max-width: 100%;
-    min-height: 100vh;
-    height: 100%;
-    padding: 64px 24px;
-    margin: 0;
-    background: #fff;
-    border-radius: 0;
-    box-shadow: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+
 
 .header-section {
     background: /*linear-gradient(180deg,#07153d -5%, #f0fdfa 100%); */ #223156;
