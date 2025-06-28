@@ -29,6 +29,9 @@
   height: 100vh;
   border-radius: 0;
   box-shadow: none;
+  padding: 0 24px 64px 24px;
+  margin-top: -90px;
+  padding-top: 80px;
 }
 
 .main-section h1, .main-section h2 {

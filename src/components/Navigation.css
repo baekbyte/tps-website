@@ -1,0 +1,5 @@
+.sticky-nav {
+    background-image: linear-gradient(rgba(22, 59, 94, 0.5), transparent);
+    border-bottom: 0;
+    box-shadow: none
+}
