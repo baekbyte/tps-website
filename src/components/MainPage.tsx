@@ -22,7 +22,19 @@ const MainPage: React.FC = () => {
         <div className="main-page">
             {/* Section 1: Header */}
             <section className="main-section header-section" id="header">
-                <h1>Fostering the intersection of technology and policy</h1>
+                <div className="header-content">
+                    <div className="header-text">
+                        <h1 className="header-title">
+                            <span className="title-line">Fostering the intersection of</span>
+                            <span className="title-line highlight">technology and policy</span>
+                        </h1>
+                        <p className="header-subtitle">
+                            Bridging the gap between innovation and governance through 
+                            <br></br>
+                            research, collaboration, and advocacy
+                        </p>
+                    </div>
+                </div>
             </section>
 
             {/* Section 2: What is TPS */}
