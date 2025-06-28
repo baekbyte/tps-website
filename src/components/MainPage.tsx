@@ -39,14 +39,39 @@ const MainPage: React.FC = () => {
 
             {/* Section 2: What is TPS */}
             <section className="main-section what-is-tps-section" id="what-is-tps">
-                <h2>What is TPS?</h2>
-                <p>TPS (Technology and Policy Society) is an organization dedicated to bridging the gap between technology and policy, fostering interdisciplinary collaboration and innovation.</p>
+                <div className="what-is-tps-textblock">
+                  <p className="tps-mission-statement">
+                    The Technology and Policy Society (TPS) is a student-led organization that connects <b>students and young professionals</b> passionate about the intersection of <b>technology</b> and <b>public policy</b>, empowering them to explore, research, and advocate for responsible innovation in society.
+                  </p>
+                  <p className="tps-sponsor">
+                    TPS is sponsored by the <a href="https://iaa.jhu.edu/" target="_blank" rel="noopener noreferrer">Johns Hopkins Institute for Assured Autonomy</a>.
+                  </p>
+                </div>
             </section>
 
             {/* Section 3: Our Projects */}
             <section className="main-section our-projects-section" id="our-projects">
-                <h2>Our Projects</h2>
-                <p>Explore our diverse range of projects that address real-world challenges at the intersection of technology and policy.</p>
+                <div className="our-projects-block">
+                  <h2 className="our-projects-title">OUR PROJECTS</h2>
+                  <div className="our-projects-divider"></div>
+                  <p className="our-projects-desc">
+                    TPS leads hands-on initiatives at the intersection of technology and policy. Our flagship projects empower students and early-career professionals to tackle real-world challenges in AI security, governance, and responsible innovation.
+                  </p>
+                  <div className="our-projects-cards">
+                    <div className="project-card">
+                      <div className="project-card-title">AI Security Hackathon</div>
+                      <div className="project-card-desc">
+                        A national hackathon bringing together students and professionals to solve pressing challenges in AI security, safety, and policy. Participants collaborate on technical and policy solutions, attend expert workshops, and compete for prizes.
+                      </div>
+                    </div>
+                    <div className="project-card">
+                      <div className="project-card-title">AI Security Frontiers Fellowship</div>
+                      <div className="project-card-desc">
+                        A semester-long fellowship for students to conduct research and develop policy recommendations on emerging issues in AI security. Fellows receive mentorship, attend seminars, and present their work to leaders in technology and policy.
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </section>
 
             {/* Section 4: Our Impact */}
