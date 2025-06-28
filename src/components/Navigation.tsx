@@ -15,10 +15,10 @@ const Header: React.FC = () => {
           </div>
           <nav className="nav-menu">
             <ul className="nav-list">
-              <li><a href="/home">Home</a></li>
-              <li><a href="/project">Project</a></li>
-              <li><a href="/resource">Resource</a></li>
-              <li><a href="/team">Team</a></li>
+              <li><a href="/home">HOME</a></li>
+              <li><a href="/project">PROJECT</a></li>
+              <li><a href="/resource">RESOURCE</a></li>
+              <li><a href="/team">TEAM</a></li>
             </ul>
           </nav>
         </div>
