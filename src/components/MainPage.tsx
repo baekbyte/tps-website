@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './MainPage.css';
 import Microsoft from './img/MicrosoftLogo.png';
@@ -8,6 +8,58 @@ import Apart from './img/ApartLogo.png';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+
+// CountUpOnView component
+const CountUpOnView: React.FC<{ end: number | string, duration?: number, suffix?: string }> = ({ end, duration = 1200, suffix = '' }) => {
+  const [count, setCount] = useState(0);
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const ref = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const node = ref.current;
+    if (!node) return;
+    const observer = new window.IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasAnimated) {
+          setHasAnimated(true);
+        }
+      },
+      { threshold: 0.5 }
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [hasAnimated]);
+
+  useEffect(() => {
+    if (!hasAnimated) return;
+    let start = 0;
+    let endNum = typeof end === 'string' ? parseInt(end.replace(/\D/g, '')) : end;
+    if (isNaN(endNum)) endNum = 0;
+    const startTime = performance.now();
+    const animate = (now: number) => {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      setCount(Math.floor(progress * (endNum - start) + start));
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      } else {
+        setCount(endNum);
+      }
+    };
+    requestAnimationFrame(animate);
+    // eslint-disable-next-line
+  }, [hasAnimated, end, duration]);
+
+  // Show suffix (like + or %)
+  let display = `${count}`;
+  if (typeof end === 'string' && /\D+$/.test(end)) {
+    display += end.match(/\D+$/)?.[0] || '';
+  } else if (suffix) {
+    display += suffix;
+  }
+
+  return <div ref={ref}>{display}</div>;
+};
 
 const MainPage: React.FC = () => {
 
@@ -81,19 +133,19 @@ const MainPage: React.FC = () => {
                   <div className="our-impact-divider"></div>
                   <div className="our-impact-stats">
                     <div className="impact-stat">
-                      <div className="impact-stat-number">200+</div>
+                      <div className="impact-stat-number"><CountUpOnView end={200} suffix="+" /></div>
                       <div className="impact-stat-desc"><b>Participants</b> engaged in TPS events and programs</div>
                     </div>
                     <div className="impact-stat">
-                      <div className="impact-stat-number">60%</div>
-                      <div className="impact-stat-desc">identify as <b>underrepresented</b> in tech & policy</div>
+                      <div className="impact-stat-number"><CountUpOnView end={10} suffix="+" /></div>
+                      <div className="impact-stat-desc"><b>Events & Workshops</b> hosted on AI, security, and policy</div>
                     </div>
                     <div className="impact-stat">
-                      <div className="impact-stat-number">2000+</div>
-                      <div className="impact-stat-desc"><b>Hours</b> dedicated to research and advocacy</div>
+                    <div className="impact-stat-number"><CountUpOnView end={15} suffix="+" /></div>
+                    <div className="impact-stat-desc"><b>Student leaders</b> serving in TPS leadership roles</div>
                     </div>
                     <div className="impact-stat">
-                      <div className="impact-stat-number">4+</div>
+                      <div className="impact-stat-number"><CountUpOnView end={4} suffix="+" /></div>
                       <div className="impact-stat-desc"><b>Partner</b> organizations and sponsors</div>
                     </div>
                   </div>
