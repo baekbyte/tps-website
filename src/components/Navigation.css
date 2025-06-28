@@ -1,5 +1,142 @@
 .sticky-nav {
     background-image: linear-gradient(rgba(22, 59, 94, 0.5), transparent);
-    border-bottom: 0;
-    box-shadow: none
+    border-bottom: none;
+    box-shadow: none;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1.25rem 0;
+    backdrop-filter: blur(10px);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.logo-link:hover {
+    transform: scale(1.05);
+}
+
+.nav-logo {
+    height: 55px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0.5rem;
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    letter-spacing: 0.025em;
+}
+
+.nav-list a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.nav-list a:hover::before {
+    opacity: 1;
+}
+
+.nav-list a:hover {
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.01);
+}
+
+.nav-list a:active {
+    transform: translateY(0);
+}
+
+/* Active state for current page */
+.nav-list a.active {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0 1rem;
+    }
+    
+    .nav-list {
+        gap: 0.25rem;
+    }
+    
+    .nav-list a {
+        padding: 0.625rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .nav-logo {
+        height: 45px;
+    }
+    
+    .sticky-nav {
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-list a {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.85rem;
+    }
+    
+    .nav-logo {
+        height: 40px;
+    }
 }
