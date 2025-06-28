@@ -1,12 +1,13 @@
 .sticky-nav {
-    background-image: linear-gradient(rgba(22, 59, 94, 0.5), transparent);
+    background-image: linear-gradient(rgba(22, 59, 94, 0.65), transparent);
     border-bottom: none;
     box-shadow: none;
     position: sticky;
     top: 0;
     z-index: 1000;
     padding: 1.25rem 0;
-    backdrop-filter: blur(5px);
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .nav-container {
