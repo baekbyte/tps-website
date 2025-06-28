@@ -7,8 +7,16 @@ const TeamPage: React.FC = () => {
 
     return (
         <div className="team-page">
-            <h1>Team Page</h1>
-            <p>This is the team page where you can manage your team members.</p>
+            {/* Section 1: Header */}
+            <section className="main-section header-section" id="header">
+                <div className="header-content">
+                    <div className="header-text">
+                        <h1 className="header-title">
+                            <span className="title-line">Team</span>
+                        </h1>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 
