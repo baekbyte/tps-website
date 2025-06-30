@@ -21,6 +21,10 @@ const TeamPage: React.FC = () => {
             </section>
             {/* Section 2: Team Cards */}
             <section className="team-cards-section">
+                <div className="team-cards-block">
+                    <h2 className="team-cards-title">EXECUTIVE BOARD</h2>
+                    <div className="team-cards-divider"></div>
+                
                 <div className="team-cards-container">
                     <TeamCard
                         image='/headshots/nathan.JPG'
@@ -47,6 +51,7 @@ const TeamPage: React.FC = () => {
                         email="jane.doe@email.com"
                     />
                     {/* Add more <TeamCard ... /> for each member */}
+                </div>
                 </div>
             </section>
         </div>
