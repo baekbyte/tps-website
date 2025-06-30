@@ -18,6 +18,14 @@ const ProjectPage: React.FC = () => {
                     </div>
                 </div>
             </section>
+            <section className='main-section project-section' id="project">
+                <div className='project-block'>
+                    <h2 className="project-title">AI SECURITY HACAKTHON</h2>
+                    <div className="project-divider"></div>
+                    <h2 className="project-title">AI SECURITY FRONTIERS FELLOWSHIP</h2>
+                    <div className="project-divider"></div>
+                </div>
+            </section>
         </div>
     );
 
