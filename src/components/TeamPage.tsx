@@ -50,6 +50,30 @@ const TeamPage: React.FC = () => {
                         linkedin="https://linkedin.com"
                         email="jane.doe@email.com"
                     />
+                    <TeamCard
+                        image='/headshots/nathan.JPG'
+                        name="Amelia Frank"
+                        title="President"
+                        affiliation="Johns Hopkins University"
+                        linkedin="https://linkedin.com"
+                        email="jane.doe@email.com"
+                    />
+                    <TeamCard
+                        image='/headshots/nathan.JPG'
+                        name="Seokhyun (Nathan) Baek"
+                        title="Vice President"
+                        affiliation="Johns Hopkins University"
+                        linkedin="https://www.linkedin.com/in/baekseokhyun/"
+                        email="sbaek19@jh.edu"
+                    />
+                    <TeamCard
+                        image='/headshots/nathan.JPG'
+                        name="Idris Sunmola"
+                        title="Head of Research"
+                        affiliation="Johns Hopkins University"
+                        linkedin="https://linkedin.com"
+                        email="jane.doe@email.com"
+                    />
                     {/* Add more <TeamCard ... /> for each member */}
                 </div>
                 </div>
