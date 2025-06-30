@@ -16,8 +16,8 @@ const Header: React.FC = () => {
           <nav className="nav-menu">
             <ul className="nav-list">
               <li><a href="/home">HOME</a></li>
-              <li><a href="/project">PROJECT</a></li>
-              <li><a href="/resource">RESOURCE</a></li>
+              <li><a href="/project">PROJECTS</a></li>
+              <li><a href="/resource">RESOURCES</a></li>
               <li><a href="/team">TEAM</a></li>
             </ul>
           </nav>
