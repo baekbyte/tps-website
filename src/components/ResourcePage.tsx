@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './ResourcePage.css';
 
 const ResourcePage: React.FC = () => {
 
@@ -15,6 +16,12 @@ const ResourcePage: React.FC = () => {
                             <span className="title-line">Resource</span>
                         </h1>
                     </div>
+                </div>
+            </section>
+            <section className='main-section resource-section' id="resource">
+                <div className='resource-block'>
+                    <h2 className="resource-title">FEATURED ARTICLES</h2>
+                    <div className="resource-divider"></div>
                 </div>
             </section>
         </div>
