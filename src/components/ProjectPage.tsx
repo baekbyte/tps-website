@@ -22,6 +22,12 @@ const ProjectPage: React.FC = () => {
                 <div className='project-block'>
                     <h2 className="project-title">AI SECURITY HACAKTHON</h2>
                     <div className="project-divider"></div>
+                    {/* Hackathon description */}
+                    {/* Key bullet points */}
+                    {/* Previous hackathon highlights and images */}
+                    {/* Showcase some submissions */}
+                    {/* Application timeline */}
+                    {/* FAQ */}
                     <h2 className="project-title">AI SECURITY FRONTIERS FELLOWSHIP</h2>
                     <div className="project-divider"></div>
                 </div>
