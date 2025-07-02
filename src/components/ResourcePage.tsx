@@ -23,7 +23,7 @@ const ResourcePage: React.FC = () => {
             title: "JHU Holds First AI Policy Hackathon",
             description: "Johns Hopkins University hosted its first AI Policy Hackathon, bringing together students, faculty, and industry experts to address challenges in AI governance and policy.",
             source: "JHU Computer Science",
-            date: "2024-01-15",
+            date: "2025-01-16",
             url: "https://www.cs.jhu.edu/news/jhu-holds-first-ai-policy-hackathon/",
             image: jhucslogo
         },
@@ -32,7 +32,7 @@ const ResourcePage: React.FC = () => {
             title: "Inside the First AI Policy Hackathon at JHU",
             description: "A detailed look at the inaugural AI Policy Hackathon at Johns Hopkins, highlighting innovative solutions and policy frameworks developed by participants.",
             source: "Apart Research",
-            date: "2024-01-20",
+            date: "2025-01-20",
             url: "https://apartresearch.com/news/inside-the-first-ai-policy-hackathon-at-johns-hopkins",
             image: apartlogo
         }
