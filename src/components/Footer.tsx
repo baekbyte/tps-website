@@ -11,8 +11,8 @@ const Footer: React.FC = () => {
           <div className="footer-section">
             <div className="footer-links">
               <a href="/home">Home</a>
-              <a href="/project">Project</a>
-              <a href="/resource">Resource</a>
+              <a href="/project">Projects</a>
+              <a href="/resource">Resources</a>
               <a href="/team">Team</a>
             </div>
           </div>
