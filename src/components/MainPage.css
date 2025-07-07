@@ -654,7 +654,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 0 96px 0;
+  padding: 0px 0 0px 0;
 }
 
 .our-partners-block {
@@ -684,3 +684,125 @@
   margin-bottom: 2.5em;
 }
 
+.contact-us-section {
+  background: #fff;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 96px 0 96px 0;
+}
+
+.contact-us-block {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-us-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #444;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.2em;
+  text-align: left;
+}
+
+.contact-us-divider {
+  width: 60px;
+  height: 3px;
+  background: #d1d5db;
+  border-radius: 2px;
+  margin-bottom: 2.5em;
+}
+
+.contact-us-message {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2.5em;
+  max-width: 1200px;
+  text-align: left;
+}
+
+.contact-us-leadership {
+  margin-top: 0;
+  font-size: 1rem;
+  color: #222;
+  background: #f6f7f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 24px 0 18px 0;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.contact-us-leadership b {
+  font-weight: 700;
+  color: #334155;
+  font-size: 1.08rem;
+}
+
+.contact-us-leadership ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0 0;
+}
+
+.contact-us-leadership li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #222;
+}
+
+.contact-us-leadership a {
+  color: #3b82f6;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.contact-us-leadership a:hover {
+  color: #1d4ed8;
+}
+
+@media (max-width: 900px) {
+  .contact-us-section {
+    padding: 48px 0 0 0;
+  }
+  .contact-us-block {
+    padding: 0 8px;
+  }
+  .contact-us-leadership {
+    padding: 16px 10px 12px 10px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-us-section {
+    padding: 24px 0 0 0;
+    min-height: unset;
+  }
+  .contact-us-block {
+    padding: 0 2px;
+  }
+  .contact-us-leadership {
+    padding: 10px 4px 8px 4px;
+  }
+}
+.contact-us-team-photo {
+  width: 100%;
+  max-width: 1000px;
+  max-height: 500px;
+  border-radius: 14px;
+  margin: 0 0 28px 0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  display: block;
+  object-fit: cover;
+  border: 2px solid #e5e7eb;
+  background: #f8fafc;
+}

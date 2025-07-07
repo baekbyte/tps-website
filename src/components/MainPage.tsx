@@ -69,6 +69,7 @@ const MainPage: React.FC = () => {
     const repeatCount = 8; // 4 * 8 = 32 slides
     const logos = Array.from({ length: baseLogos.length * repeatCount }, (_, i) => baseLogos[i % baseLogos.length]);
     const total = logos.length;
+    const teamphoto = require('./img/teamphoto.JPG');
 
     return (
         <div className="main-page">
@@ -179,6 +180,30 @@ const MainPage: React.FC = () => {
                     </div>
                 </div>
             </section>
+            {/* Section 6: Contact Us */}
+            <section className="main-section contact-us-section" id="our-contact">
+                    <div className="contact-us-block">
+                      <h2 className='contact-us-title'>CONTACT US</h2>
+                      <div className="contact-us-divider"></div>
+                      <p className="contact-us-message">
+                        <b>Interested in joining TPS</b>, collaborating, or learning more? Reach out to us!
+                      </p>
+                      <img src={teamphoto} alt="TPS Team" className="contact-us-team-photo" />
+                      <div className="contact-us-leadership">
+                        <b>Leadership Contacts:</b>
+                        <ul>
+                          <li>
+                            Amelia Frank (<a href="mailto:afrank33@jh.edu">afrank33@jh.edu</a>)
+                          </li>
+                          <li>
+                            Nathan Baek (<a href="mailto:sbaek19@jh.edu">sbaek19@jh.edu</a>)
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+            </section>
+
         </div>
     );
 }
