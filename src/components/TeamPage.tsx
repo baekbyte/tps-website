@@ -27,7 +27,7 @@ const TeamPage: React.FC = () => {
                 
                 <div className="team-cards-container">
                     <TeamCard
-                        image='/headshots/nathan.JPG'
+                        image='/headshots/1.JPG'
                         name="Amelia Frank"
                         title="President"
                         affiliation="Johns Hopkins University"
@@ -35,7 +35,7 @@ const TeamPage: React.FC = () => {
                         email="jane.doe@email.com"
                     />
                     <TeamCard
-                        image='/headshots/nathan.JPG'
+                        image='/headshots/2.JPG'
                         name="Seokhyun (Nathan) Baek"
                         title="Vice President"
                         affiliation="Johns Hopkins University"
