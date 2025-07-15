@@ -31,8 +31,8 @@ const TeamPage: React.FC = () => {
                         name="Amelia Frank"
                         title="President"
                         affiliation="Johns Hopkins University"
-                        linkedin="https://linkedin.com"
-                        email="jane.doe@email.com"
+                        linkedin="https://www.linkedin.com/in/amelia-frank/"
+                        email="afrank33@jh.edu"
                     />
                     <TeamCard
                         image='/headshots/2.JPG'
@@ -51,12 +51,12 @@ const TeamPage: React.FC = () => {
                         email="jane.doe@email.com"
                     />
                     <TeamCard
-                        image='/headshots/nathan.JPG'
-                        name="Amelia Frank"
-                        title="President"
+                        image='/headshots/3.JPG'
+                        name="Bertrand Lin"
+                        title="Treasurer"
                         affiliation="Johns Hopkins University"
                         linkedin="https://linkedin.com"
-                        email="jane.doe@email.com"
+                        email="clin143@jh.edu"
                     />
                     <TeamCard
                         image='/headshots/nathan.JPG'
