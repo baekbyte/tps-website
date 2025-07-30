@@ -20,10 +20,10 @@ const TeamCard: React.FC<TeamCardProps> = ({ image, name, title, affiliation, li
                 <div className="team-card-title">{title}</div>
                 <div className="team-card-affiliation">{affiliation}</div>
                 <div className="team-card-links">
-                    <a href={linkedin} target="_blank" rel="noopener noreferrer" className="team-card-icon" aria-label="LinkedIn">
+                    <a href={`mailto:${email}`} className="team-card-icon" aria-label="Email">
                         <img src={require('./img/email.png')} alt="Email" style={{ width: 22, height: 22 }} />
                     </a>
-                    <a href={`mailto:${email}`} className="team-card-icon" aria-label="Email">
+                    <a href={linkedin} target="_blank" rel="noopener noreferrer" className="team-card-icon" aria-label="LinkedIn">
                         <img src={require('./img/linkedin.png')} alt="Email" style={{ width: 22, height: 22 }} />
                     </a>
                 </div>

@@ -43,12 +43,36 @@ const TeamPage: React.FC = () => {
                         email="sbaek19@jh.edu"
                     />
                     <TeamCard
-                        image='/headshots/nathan.JPG'
+                        image='/headshots/4.JPG'
                         name="Idris Sunmola"
                         title="Head of Research"
                         affiliation="Johns Hopkins University"
-                        linkedin="https://linkedin.com"
-                        email="jane.doe@email.com"
+                        linkedin="https://www.linkedin.com/in/idris-sunmola-78784948/"
+                        email="isunmol1@jhu.edu"
+                    />
+                    <TeamCard
+                        image='/headshots/5.JPG'
+                        name="Yueran (Joy) Yu"
+                        title="Head of Marketing"
+                        affiliation="Johns Hopkins University"
+                        linkedin="https://www.linkedin.com/in/yueran-yu-440a091a4/"
+                        email="yyu112@jhu.edu"
+                    />
+                    <TeamCard
+                        image='/headshots/6.JPG'
+                        name="Andreas Jaramillo"
+                        title="Head of Technology"
+                        affiliation="Johns Hopkins University"
+                        linkedin="https://www.linkedin.com/in/andreas-jaramillo/"
+                        email="ajarami6@jhu.edu"
+                    />
+                    <TeamCard
+                        image='/headshots/7.JPG'
+                        name="Jason Lafita"
+                        title="Head of Communicatons"
+                        affiliation="Johns Hopkins University"
+                        linkedin="https://www.linkedin.com/in/jason-lafita-ba2187232/"
+                        email="jlafita1@jh.edu"
                     />
                     <TeamCard
                         image='/headshots/3.JPG'
@@ -59,20 +83,12 @@ const TeamPage: React.FC = () => {
                         email="clin143@jh.edu"
                     />
                     <TeamCard
-                        image='/headshots/nathan.JPG'
-                        name="Seokhyun (Nathan) Baek"
-                        title="Vice President"
+                        image='/headshots/8.JPG'
+                        name="Laila Paredes"
+                        title="Technology"
                         affiliation="Johns Hopkins University"
-                        linkedin="https://www.linkedin.com/in/baekseokhyun/"
-                        email="sbaek19@jh.edu"
-                    />
-                    <TeamCard
-                        image='/headshots/nathan.JPG'
-                        name="Idris Sunmola"
-                        title="Head of Research"
-                        affiliation="Johns Hopkins University"
-                        linkedin="https://linkedin.com"
-                        email="jane.doe@email.com"
+                        linkedin="https://www.linkedin.com/in/laila-paredes/"
+                        email="lparede2@jhu.edu"
                     />
                     {/* Add more <TeamCard ... /> for each member */}
                 </div>
