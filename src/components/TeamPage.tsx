@@ -27,7 +27,7 @@ const TeamPage: React.FC = () => {
                 
                 <div className="team-cards-container">
                     <TeamCard
-                        image='/headshots/1.JPG'
+                        image='/headshots/1.jpg'
                         name="Amelia Frank"
                         title="President"
                         affiliation="Johns Hopkins University"
@@ -35,7 +35,7 @@ const TeamPage: React.FC = () => {
                         email="afrank33@jh.edu"
                     />
                     <TeamCard
-                        image='/headshots/2.JPG'
+                        image='/headshots/2.jpg'
                         name="Seokhyun (Nathan) Baek"
                         title="Vice President"
                         affiliation="Johns Hopkins University"
@@ -43,7 +43,7 @@ const TeamPage: React.FC = () => {
                         email="sbaek19@jh.edu"
                     />
                     <TeamCard
-                        image='/headshots/4.JPG'
+                        image='/headshots/4.jpg'
                         name="Idris Sunmola"
                         title="Head of Research"
                         affiliation="Johns Hopkins University"
@@ -51,7 +51,7 @@ const TeamPage: React.FC = () => {
                         email="isunmol1@jhu.edu"
                     />
                     <TeamCard
-                        image='/headshots/5.JPG'
+                        image='/headshots/5.jpg'
                         name="Yueran (Joy) Yu"
                         title="Head of Marketing"
                         affiliation="Johns Hopkins University"
@@ -59,7 +59,7 @@ const TeamPage: React.FC = () => {
                         email="yyu112@jhu.edu"
                     />
                     <TeamCard
-                        image='/headshots/6.JPG'
+                        image='/headshots/6.jpg'
                         name="Andreas Jaramillo"
                         title="Head of Technology"
                         affiliation="Johns Hopkins University"
@@ -67,7 +67,7 @@ const TeamPage: React.FC = () => {
                         email="ajarami6@jhu.edu"
                     />
                     <TeamCard
-                        image='/headshots/7.JPG'
+                        image='/headshots/7.jpg'
                         name="Jason Lafita"
                         title="Head of Communicatons"
                         affiliation="Johns Hopkins University"
@@ -75,7 +75,7 @@ const TeamPage: React.FC = () => {
                         email="jlafita1@jh.edu"
                     />
                     <TeamCard
-                        image='/headshots/3.JPG'
+                        image='/headshots/3.jpg'
                         name="Bertrand Lin"
                         title="Treasurer"
                         affiliation="Johns Hopkins University"
@@ -83,7 +83,7 @@ const TeamPage: React.FC = () => {
                         email="clin143@jh.edu"
                     />
                     <TeamCard
-                        image='/headshots/8.JPG'
+                        image='/headshots/8.jpg'
                         name="Laila Paredes"
                         title="Technology"
                         affiliation="Johns Hopkins University"
