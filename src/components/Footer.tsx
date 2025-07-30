@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-section">
-            <p>&copy; 2025 TPS Website. All rights reserved. Site by Nathan Baek</p>
+            <p>&copy; 2025 TPS Website. All rights reserved. <a className="creator" href='https://github.com/baekbyte'>Site by Nathan Baek</a></p>
           </div>
           <div className="footer-section">
             <div className="footer-links">

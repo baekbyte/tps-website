@@ -90,3 +90,13 @@
   }
 }
 
+.creator {
+  color: #60a5fa; /* Use the first color from your gradient */
+  text-decoration: none;
+}
+
+.creator:hover {
+  color: #a78bfa; /* Use the second color on hover */
+  text-decoration: underline;
+}
+
